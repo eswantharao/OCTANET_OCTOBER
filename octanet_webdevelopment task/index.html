@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="mystyle.css" />
+    <title>octanet</title>
+  </head>
+  <body>
+    <div class="whole">
+      <header>
+        <div class="head-content">
+          <h1 class="head">
+            Recipes like mom used to make, just a little better
+          </h1>
+
+          <button class="book">Book now</button>
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="content-1" id="c1">
+          <h1>Meals <span>made</span> easy</h1>
+          <p>
+            Meals made easy Whether your family's tired of takeout or you don't
+            know what to with the leftovers from Sunday dinner, this class can
+            help. Learn delicious recipes from self-taught chef
+            <span class="eswanth">Eswanth</span>, right in him kitchen.
+          </p>
+        </div>
+
+        <div class="content-2">
+          <div class="content-1" id="item">
+            <h1>Our <span> Story</span></h1>
+            <p>
+                <span class="eswanth">Eswanth</span> recipes have been recognized regionally and
+              internationally as some of the finest the south has to offer. Now
+              he wants to bring him ingredients out of him cookbooks and into
+              your home, one meal at a time.
+            </p>
+          </div>
+
+          <div class="content-1" id="item">
+            <h1>Easy <span>Healthy</span> Recipes</h1>
+            <p>
+              Want to eat healthy and keep it simple? We have the best easy and
+              healthy recipes for your lifestyle. Start with great ingredients
+              and let them shine so your shine, too!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  
+
+
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>">
+
+    <script>
+
+      gsap.from('.head',{opacity:0,duration:2,y:-50,ease:"Power2.easeInOut"})
+
+      gsap.from('.book',{opacity:0,duration:1,x:50,delay:1})
+
+      gsap.from('.content-2',{opacity:0,duration:1,y:50,delay:3})
+      
+      gsap.from('#c1',{opacity:0,duration:1,x:50,delay:2})
+
+    </script>
+
+  
+  </body>
+</html>
